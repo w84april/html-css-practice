@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -86,7 +87,9 @@
                     <p class="skills__content">Adobe Photoshop</p>
                     <progress class="skills__progress" max="100" value="70"> 70% </progress>
                 </div>
-                <img class="skills__face" src="./img/face.jpg" alt="face">
+                <div class="skills__face__wrapper">
+                     <img class="skills__face" src="./img/face.jpg" alt="face">
+                </div> 
             </div>
         </section>
 
@@ -94,32 +97,18 @@
             <div class="work__wrapper">
                 <h4 class="about__header">Как я работаю</h4>
                 <p class="work__content">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                    Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                <img class="work__playbutton" src="img/play-button.png">
-                <img class="work__video" src="/img/Rectangle 5.png">
-
+                    Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                </p>
             </div>
+                <div class="work__video__wrapper">
+                    <img class="work__playbutton" src="img/play-button.png">
+                    <img class="work__video" src="/img/Rectangle 5.png">
+                </div>
+
         </section>
 
 
         <section class="pictures">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
             <div class="pictures__grid__wrapper">
@@ -178,17 +167,22 @@
 
         <section class="offer">
             <div class="offer__wrapper">
-                <h5 class="offer__header">Хотите веб-сайт?</h5>
-                <p class="offer__content">
+                <div class="offer__wrapper__info">
+                    <h5 class="offer__header">Хотите веб-сайт?</h5>
+                    <p class="offer__content">
                     Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                     стандартной "рыбой" для текстов на латинице с начала XVI века.
-                </p>
+                    </p>
+                </div>
                 <div class="offer__textboxes">
                     <input placeholder="Ваше имя" type="text" class="offer__textboxes__field">
                     <input placeholder="Ваш e-mail" type="text" class="offer__textboxes__field">
                 </div>
                 <input placeholder="Сообщение" type="text" class="offer__message__input">
+                <div class="offer__button__wrapper">
                 <button type="submit" class="offer__button">ОТПРАВИТЬ</button>
+                </div>
+
             </div>
         </section>
 
@@ -197,6 +191,7 @@
 
         <footer class="footer">
             <div class="footer__wrapper">
+                
                 <div class="footer__leftside">
                     <p class="footer__header">Иванов Иван</p>
                     <p class="footer__copyright">(с) 2018. Все права защищены.</p>
@@ -206,6 +201,7 @@
                     <img class="footer__logo" src="img/vk_logo.png">
                     <img class="footer__logo" src="img/vk_logo.png">
                 </div>
+
             </div>
         </footer>
     </main>
