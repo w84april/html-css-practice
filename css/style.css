@@ -97,6 +97,7 @@ body {
   font-size: 48px;
   line-height: 79px;
   margin-bottom: 60px;
+  text-align: start;
 }
 
 .intro_content {
@@ -213,7 +214,7 @@ body {
 
 .skills__face {
   width: 555px;
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .skills__header {
@@ -277,7 +278,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  padding-bottom: 28px;
+  padding-bottom: 128px;
 }
 
 .work__video {
@@ -298,10 +299,9 @@ body {
 .work__playbutton {
   color: white;
   position: absolute;
-  text-align: center;
   left: 46%;
   right: 0;
-  top: 40%;
+  top: 35%;
   bottom: 0;
   width: 6%;
 }
@@ -370,7 +370,6 @@ body {
 
 .offer {
   display: flex;
-  height: 762px;
   background-color: #eeeff1;
   align-items: center;
 }
@@ -382,6 +381,8 @@ body {
   flex-wrap: wrap;
   width: 540px;
   margin: 0 auto;
+  padding-bottom: 100px;
+  padding-top: 128px;
 }
 
 .offer__header {
@@ -450,7 +451,7 @@ body {
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  margin-top: 50px;
   padding-bottom: 50px;
   width: 1125px;
 }
@@ -486,6 +487,10 @@ body {
 }
 
 @media screen and (max-width: 1280px) {
+  .header {
+    position: relative;
+  }
+
   .header__list {
     display: none;
   }
@@ -510,12 +515,11 @@ body {
   }
 
   .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #eeeff1;
-    background-size: cover;
-    padding-top: 257px;
+    padding-top: 0;
+  }
+
+  .intro__title {
+    text-align: center;
   }
 
   .intro__wrapper__column {
@@ -529,6 +533,7 @@ body {
     justify-content: center;
     width: 298px;
     padding-bottom: 51px;
+    margin-top: 67px;
   }
 
   .intro_content {
@@ -541,7 +546,6 @@ body {
     max-width: 540px;
     max-height: 67px;
   }
-
   .about__wrapper {
     padding-bottom: 82px;
   }
@@ -566,12 +570,21 @@ body {
     align-items: center;
   }
 
+  .skills__header {
+    text-align: center;
+  }
+
   .skills_myskills {
-    width: 100%;
+    width: 98%;
     justify-content: flex-start;
   }
   .skills__face {
     margin-bottom: 98px;
+  }
+
+  .skills__face__wrapper {
+    display: flex;
+    justify-content: center;
   }
 
   .skills__progress {
@@ -584,7 +597,12 @@ body {
 
   .work__video {
     width: 100%;
-    padding-bottom: 91px;
+  }
+
+  .work__playbutton {
+    display: flex;
+    left: 46%;
+    top: 35%;
   }
 
   .work__content {
@@ -592,7 +610,7 @@ body {
   }
 
   .work__video__wrapper {
-    padding-bottom: 0px;
+    padding-bottom: 125px;
   }
 
   .pictures__grid__wrapper {
@@ -607,10 +625,14 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 90%;
+    padding-bottom: 57px;
   }
-
+  .offer__button__wrapper {
+    margin-bottom: 100px;
+  }
   .offer__wrapper {
     max-width: 100%;
+    padding-bottom: 0;
   }
 
   .offer__textboxes {
@@ -631,6 +653,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0px;
+    padding-top: 50px;
   }
 
   .footer__header {
