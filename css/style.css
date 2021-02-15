@@ -658,17 +658,15 @@ body {
     margin-bottom: 22px;
   }
 
-<<<<<<< HEAD
-  .offer__button__wrapper {
+  <<<<<<< HEAD .offer__button__wrapper {
     padding-top: 0;
   }
 
   .offer__button {
     margin-top: 48px;
   }
-=======
->>>>>>> 569e4a10f3ea2e8c64136a113f8def9f68affc08
-  .offer__message__input {
+  =======>>>>>>>569e4a10f3ea2e8c64136a113f8def9f68affc08
+    .offer__message__input {
     margin-top: 0;
   }
 
