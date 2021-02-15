@@ -36,6 +36,7 @@ body {
   font-weight: normal;
   color: 000000;
 }
+
 .item {
   width: 200px;
   height: 100px;
@@ -57,15 +58,15 @@ body {
 }
 .header__wrapper {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   padding-top: 57px;
 }
 .header__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 50px;
 }
 
 .header__items {
@@ -90,7 +91,7 @@ body {
 .intro {
   background-color: #eeeff1;
   background-size: cover;
-  padding-top: 257px;
+  padding-top: 162px;
 }
 .intro__title {
   font-weight: 500;
@@ -143,8 +144,6 @@ body {
 
 .about {
   display: flex;
-
-  height: 359px;
 }
 
 .about__wrapper {
@@ -154,6 +153,8 @@ body {
   flex-wrap: wrap;
   max-width: 540px;
   margin: 0 auto;
+  padding-top: 112px;
+  padding-bottom: 100px;
 }
 
 .about__header {
@@ -171,7 +172,6 @@ body {
   line-height: 26px;
   color: #727272;
   max-width: 540px;
-  max-height: 67px;
 }
 
 .projects {
@@ -205,6 +205,7 @@ body {
 .skills__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
   width: 1150px;
@@ -213,8 +214,8 @@ body {
 }
 
 .skills__face {
-  width: 555px;
-  max-width: 90%;
+  width: 100%;
+  max-width: 555px;
 }
 
 .skills__header {
@@ -240,7 +241,6 @@ body {
 }
 
 .skills_myskills {
-  width: 50%;
   max-width: 100%;
 }
 
@@ -259,7 +259,7 @@ body {
 .work {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   background-color: #eeeff1;
 }
 
@@ -278,11 +278,13 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 128px;
+  max-width: 1100px;
 }
 
 .work__video {
-  width: 57%;
+  width: 100%;
 }
 
 .work__content {
@@ -293,17 +295,10 @@ body {
   line-height: 26px;
   color: #727272;
   max-width: 540px;
-  max-height: 67px;
 }
 
 .work__playbutton {
-  color: white;
   position: absolute;
-  left: 46%;
-  right: 0;
-  top: 35%;
-  bottom: 0;
-  width: 6%;
 }
 
 .pictures {
@@ -363,8 +358,7 @@ body {
 /* Попытка реализовать грид*/
 .pictures__grid__wrapper {
   display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 1fr);
 }
 /* Попытка реализовать грид*/
 
@@ -384,7 +378,6 @@ body {
   padding-bottom: 100px;
   padding-top: 128px;
 }
-
 .offer__header {
   display: flex;
   justify-content: center;
@@ -402,7 +395,7 @@ body {
   line-height: 26px;
   color: #727272;
   max-width: 540px;
-  max-height: 67px;
+
   margin-bottom: 65px;
 }
 
@@ -432,14 +425,13 @@ body {
 }
 
 .offer__button {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.15em;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 20px;
+  width: 190px;
   color: white;
   background-color: #34547a;
+  letter-spacing: 0.15em;
   margin-top: 50px;
 }
 
@@ -520,20 +512,37 @@ body {
 
   .intro__title {
     text-align: center;
+    margin-bottom: 44px;
   }
 
+  .intro__wrapper {
+    padding-bottom: 95px;
+  }
   .intro__wrapper__column {
     display: flex;
     align-items: center;
     margin-left: 0;
   }
 
+  .about__wrapper {
+    padding-top: 91px;
+  }
+
+  .about__header {
+    margin-bottom: 42px;
+  }
+
+  .about__content {
+    line-height: 19.2px;
+  }
+
   .intro__frame {
     display: flex;
     justify-content: center;
     width: 298px;
-    padding-bottom: 51px;
+    margin-bottom: 72px;
     margin-top: 67px;
+    max-height: 195px;
   }
 
   .intro_content {
@@ -541,10 +550,10 @@ body {
     text-align: center;
     font-weight: normal;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 19.2px;
     color: #727272;
     max-width: 540px;
-    max-height: 67px;
+    margin-bottom: 44px;
   }
   .about__wrapper {
     padding-bottom: 82px;
@@ -568,10 +577,13 @@ body {
   .skills__wrapper {
     flex-direction: column-reverse;
     align-items: center;
+    padding-top: 82px;
+    padding-bottom: 103px;
   }
 
   .skills__header {
     text-align: center;
+    margin-bottom: 42px;
   }
 
   .skills_myskills {
@@ -595,18 +607,12 @@ body {
     max-width: 323px;
   }
 
+  .work__content {
+    line-height: 19.2px;
+  }
+
   .work__video {
     width: 100%;
-  }
-
-  .work__playbutton {
-    display: flex;
-    left: 46%;
-    top: 35%;
-  }
-
-  .work__content {
-    margin-bottom: 57px;
   }
 
   .work__video__wrapper {
@@ -614,9 +620,8 @@ body {
   }
 
   .pictures__grid__wrapper {
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: column;
   }
 
@@ -625,10 +630,20 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 90%;
-    padding-bottom: 57px;
+    padding-bottom: 48px;
   }
   .offer__button__wrapper {
     margin-bottom: 100px;
+    padding-top: 125px;
+  }
+
+  .offer__header {
+    margin-bottom: 34px;
+  }
+
+  .offer__content {
+    line-height: 19.2px;
+    margin-bottom: 0;
   }
   .offer__wrapper {
     max-width: 100%;
@@ -645,6 +660,13 @@ body {
     margin-bottom: 22px;
   }
 
+  .offer__button__wrapper {
+    padding-top: 0;
+  }
+
+  .offer__button {
+    margin-top: 48px;
+  }
   .offer__message__input {
     margin-top: 0;
   }
